@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulation of Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+			var text = prompt("Please enter the String :" );
+			document.write("String is : "+text+"<br>");
+			var fi = text.indexOf("a");
+			var la = text.lastIndexOf("a");
+			var demo="";
+			document.write("first index of a is : "+fi+"<br>");
+			document.write("last index of a is : "+la+"<br>");
+			for(var i=fi+1;i<la;i++)
+			{
+				demo = demo + text.charAt(i);
+			}
+			document.write("String between both a is : "+demo+"<br>");
+			
+	</script>
+</body>
+</html>
