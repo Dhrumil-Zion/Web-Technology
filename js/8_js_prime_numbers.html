@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Numbers In Table</title>
+</head>
+<body>
+<form name="form" onsubmit="demo()">
+		<input type="number" name="number"/><br/>
+		<input type="submit" name="submit"/>
+	</form>
+	<script type="text/javascript">
+		function demo() 
+		{
+		var c=0;
+		var i=2,k=0;
+		var no=document.form.number.value;
+		document.write("<table border='5'>");
+		document.write("<tr><td>Sr No.</td><td>Prime Number</td></tr>");
+		while(no>k)
+		{
+			c=0;
+			for(var j=2;j<i;j++)
+			{
+				if(i%j==0)
+					c=1;
+			}
+			if(c==0)
+			{
+				k++;
+				document.write("<tr><td>"+k+"</td><td>"+i+"</td></tr>");
+			}
+			i++;
+		}
+		document.write("</table>");
+	}
+	</script>
+	
+</body>
+</html>
